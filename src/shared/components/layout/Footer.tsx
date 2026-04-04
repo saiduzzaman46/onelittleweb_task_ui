@@ -53,8 +53,8 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="w-full bg-white pt-20">
-      <div className="max-w-[1440px] mx-auto px-[104px] py-[80px]  border-t-1 border-[#D6D6D6]">
+    <footer className="w-full bg-white border-t-1 border-[#D6D6D6]">
+      <div className="max-w-[1440px] mx-auto px-[104px] py-[80px]  ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[396px_1fr_1fr_1fr] gap-20 2xl:gap-30">
           {/* Logo & Description */}
           <div className="flex flex-col gap-6">

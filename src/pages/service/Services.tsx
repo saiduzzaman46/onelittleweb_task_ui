@@ -11,8 +11,20 @@ const Services = () => {
   );
 
   return (
-    <section id="services" className="w-full flex flex-col items-center pt-[56px]">
-      <div className="text-center max-w-[740px] mb-[54px]">
+    <section
+      id="services"
+      className="
+        w-full flex flex-col items-center
+        pt-10 sm:pt-12 md:pt-14 xl:pt-[56px]
+      "
+    >
+      <div
+        className="
+          text-center max-w-[740px]
+          mb-8 sm:mb-10 md:mb-12 xl:mb-[54px]
+          px-4 sm:px-6
+        "
+      >
         <SectionHeader
           title="Our"
           highlightText="Service"
@@ -20,7 +32,14 @@ const Services = () => {
         />
       </div>
 
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-25 gap-[24px] ">
+      <div
+        className="
+          w-full max-w-[1340px]
+          grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
+          gap-4 sm:gap-5 xl:gap-[24px]
+          px-8 sm:px-6 md:px-8 lg:px-10 xl:px-[50px]
+        "
+      >
         {servicesData.map((service) => (
           <ServiceCard
             key={service.id}
