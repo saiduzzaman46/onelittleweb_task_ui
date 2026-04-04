@@ -33,7 +33,7 @@ const Navbar = () => {
         <div className="shrink-0">
           <Link href="/#home" onClick={() => scrollToSection("home")}>
             <Image
-              src="/logo/google-logo.png"
+              src="/logo/Google-Logo.png"
               alt="Logo"
               width={124}
               height={45}

@@ -60,7 +60,7 @@ const Footer = () => {
           <div className="flex flex-col gap-6">
             <Link href="/" className="shrink-0">
               <Image
-                src="/logo/google-logo.png"
+                src="/logo/Google-Logo.png"
                 alt="Logo"
                 width={124}
                 height={45}
