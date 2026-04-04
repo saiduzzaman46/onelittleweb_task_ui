@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { pricingData } from "./pricing.data";
+import { pricingData } from "@/data/pricing.data";
 import PricingCard from "./PricingCard";
 
 const Pricing = () => {

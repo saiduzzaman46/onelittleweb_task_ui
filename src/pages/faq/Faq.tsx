@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import SectionHeader from "@/shared/components/ui/SectionHeader";
-import { faqData } from "./faq.data";
+import { faqData } from "@/data/faq.data";
 import FaqItem from "./FaqItem";
 import FaqContact from "./FaqContact";
 

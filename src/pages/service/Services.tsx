@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import ServiceCard from "./ServiceCard";
-import { servicesData } from "./services.data";
+import { servicesData } from "@/data/services.data";
 import SectionHeader from "@/shared/components/ui/SectionHeader";
 
 const Services = () => {

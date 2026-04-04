@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import SectionHeader from "@/shared/components/ui/SectionHeader";
 import ReviewCard from "./ReviewCard";
-import { reviews } from "./review.data";
+import { reviews } from "@/data/review.data";
 
 const CARD_WIDTHS = {
   sm: 280,
