@@ -54,7 +54,7 @@ Ensure you have **Node.js 18+** installed on your system.
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone <repo-url>
+   git clone https://github.com/saiduzzaman46/onelittleweb_task_ui.git
    ```
 2. Install dependencies:
    ```bash
