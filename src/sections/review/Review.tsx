@@ -50,11 +50,11 @@ const Review = () => {
       id="reviews"
       className="
         w-full flex flex-col items-center bg-white overflow-hidden
-        pb-10 sm:pb-14 lg:pb-[80px]
-        pt-14 sm:pt-20 md:pt-24 lg:pt-[130px]
+        pb-10 sm:pb-14 lg:pb-20
+        pt-14 sm:pt-20 md:pt-24 lg:pt-32.5
       "
     >
-      <div className="text-center max-w-[760px] px-4 sm:px-6 mb-10 sm:mb-12 lg:mb-[60px]">
+      <div className="text-center max-w-190 px-4 sm:px-6 mb-10 sm:mb-12 lg:mb-15">
         <SectionHeader
           title="Check Our Clients "
           highlightText="Review"

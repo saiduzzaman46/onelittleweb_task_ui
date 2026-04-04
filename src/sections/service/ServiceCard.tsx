@@ -22,7 +22,7 @@ const ServiceCard = ({
         sm:pt-8 sm:pb-6 sm:pl-7 sm:pr-5
         md:pt-9 md:pb-6 md:pl-8 md:pr-6
         lg:pt-10 lg:pb-7 lg:pl-8 lg:pr-6
-        xl:pt-[53px] xl:pb-[30px] xl:pl-[33px] xl:pr-[25px]
+        xl:pt-13.25 xl:pb-7.5 xl:pl-8.25 xl:pr-6.25
         ${
           isActive
             ? "shadow-[0_4px_90px_rgba(215,205,207,0.47)] border border-transparent"
@@ -32,11 +32,11 @@ const ServiceCard = ({
     >
       <div
         className="
-          relative mb-4 sm:mb-5 xl:mb-[32px]
-          w-[52px] h-[52px]
-          sm:w-[62px] sm:h-[62px]
-          md:w-[70px] md:h-[70px]
-          xl:w-[80px] xl:h-[80px]
+          relative mb-4 sm:mb-5 xl:mb-8
+          w-13 h-13
+          sm:w-15.5 sm:h-15.5
+          md:w-17.5 md:h-17.5
+          xl:w-20 xl:h-20
         "
       >
         <Image
@@ -54,13 +54,13 @@ const ServiceCard = ({
           text-[18px] mb-2
           sm:text-[20px] sm:mb-3
           md:text-[22px]
-          xl:text-[24px] xl:mb-[14px]
+          xl:text-[24px] xl:mb-3.5
         "
       >
         {title}
       </h4>
 
-      <p className="w-full mb-4 sm:mb-5 xl:mb-[35px]">
+      <p className="w-full mb-4 sm:mb-5 xl:mb-8.75">
         {description}
       </p>
 

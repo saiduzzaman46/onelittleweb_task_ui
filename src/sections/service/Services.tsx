@@ -15,13 +15,13 @@ const Services = () => {
       id="services"
       className="
         w-full flex flex-col items-center
-        pt-10 sm:pt-12 md:pt-14 xl:pt-[56px]
+        pt-10 sm:pt-12 md:pt-14 xl:pt-14
       "
     >
       <div
         className="
-          text-center max-w-[740px]
-          mb-8 sm:mb-10 md:mb-12 xl:mb-[54px]
+          text-center max-w-185
+          mb-8 sm:mb-10 md:mb-12 xl:mb-13.5
           px-4 sm:px-6
         "
       >
@@ -34,10 +34,10 @@ const Services = () => {
 
       <div
         className="
-          w-full max-w-[1340px]
+          w-full max-w-335
           grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
-          gap-4 sm:gap-5 xl:gap-[24px]
-          px-8 sm:px-6 md:px-8 lg:px-10 xl:px-[50px]
+          gap-4 sm:gap-5 xl:gap-6
+          px-8 sm:px-6 md:px-8 lg:px-10 xl:px-12.5
         "
       >
         {servicesData.map((service) => (

@@ -21,8 +21,8 @@ const PricingCard = ({
       className={`font-manrope flex flex-col rounded-[10px] w-full
         px-4 py-6
         sm:px-5 sm:py-8
-        md:px-[20px] md:py-[32px]
-        lg:px-[24px] lg:py-[40px]
+        md:px-5 md:py-8
+        lg:px-6 lg:py-10
       ${
         isActive
           ? "bg-[#ED3C6A] text-white  border border-transparent"
@@ -30,9 +30,9 @@ const PricingCard = ({
       }`}
     >
       {/* Plan name + description */}
-      <div className="mb-4 lg:mb-[20px]">
+      <div className="mb-4 lg:mb-5">
         <h3
-          className={`font-bold mb-2 lg:mb-[12px]
+          className={`font-bold mb-2 lg:mb-3
             text-[18px] sm:text-[19px] lg:text-[22px]
           `}
         >
@@ -40,7 +40,7 @@ const PricingCard = ({
         </h3>
 
         <p
-          className={`font-manrope! font-[400]!
+          className={`font-manrope! font-normal!
             text-[13px]! sm:text-[14px]! lg:text-[16px]!
             ${isActive ? "text-white" : "text-[#64748B]"}`}
         >
@@ -49,17 +49,17 @@ const PricingCard = ({
       </div>
 
       {/* Price + CTA */}
-      <div className="mt-1 mb-6 lg:mt-[6px] lg:mb-[40px]">
-        <div className="flex items-center gap-2 mb-4 lg:mb-[24px]">
+      <div className="mt-1 mb-6 lg:mt-1.5g:mb-[40px]">
+        <div className="flex items-center gap-2 mb-4 lg:mb-6">
           <span
-            className={`font-[600] tracking-tighter
+            className={`font-semibold tracking-tighter
               text-[38px] sm:text-[44px] lg:text-[56px]
             `}
           >
             ${price}
           </span>
           <span
-            className={`font-[300]
+            className={`font-light
               text-[13px] sm:text-[14px] lg:text-[16px]
               ${isActive ? "text-white" : "text-[#4B5768]"}`}
           >
@@ -70,14 +70,14 @@ const PricingCard = ({
         {isActive ? (
           <Button
             variant="secondary"
-            className="w-full text-[14px] sm:text-[15px] lg:text-[16px] font-semibold rounded-[4px] py-[11px]"
+            className="w-full text-[14px] sm:text-[15px] lg:text-[16px] font-semibold rounded-sm py-2.75"
           >
             Get Started Now
           </Button>
         ) : (
           <Button
             variant="outline"
-            className="w-full border-2 text-[14px] sm:text-[15px] lg:text-[16px] font-semibold rounded-[4px] py-[11px]"
+            className="w-full border-2 text-[14px] sm:text-[15px] lg:text-[16px] font-semibold rounded-sm py-2.75"
           >
             Get Started Now
           </Button>
@@ -85,12 +85,12 @@ const PricingCard = ({
       </div>
 
       {/* Feature list */}
-      <div className="flex flex-col gap-3 lg:gap-[12px] flex-grow">
+      <div className="flex flex-col gap-3 lg:gap-3 grow">
         {features.map((feature, idx) => (
-          <div key={idx} className="flex items-center gap-3 lg:gap-[17px]">
+          <div key={idx} className="flex items-center gap-3 lg:gap-4.25">
             <div
-              className={`flex items-center justify-center rounded-full flex-shrink-0
-                w-[26px] h-[26px] sm:w-[28px] sm:h-[28px] lg:w-[32px] lg:h-[32px]
+              className={`flex items-center justify-center rounded-full shrink-0
+                w-6.5 h-6.5 sm:w-7 sm:h-7 lg:w-8 lg:h-8
               ${
                 feature.included
                   ? isActive

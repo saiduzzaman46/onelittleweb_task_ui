@@ -10,23 +10,23 @@ const ReviewCard = ({
   return (
     <div
       className={`relative flex flex-col justify-center rounded-[11px] transition-all duration-300 border-2
-        gap-4 px-5 py-6 min-h-[220px]
-        md:gap-5 md:px-8 md:py-8 md:min-h-[200px]
-        lg:gap-[30px] lg:px-10 lg:py-8
+        gap-4 px-5 py-6 min-h-55
+        md:gap-5 md:px-8 md:py-8 md:min-h-50
+        lg:gap-7.5 lg:px-10 lg:py-8
         ${
           isFeatured
             ? "bg-white shadow-[0px_4px_77.4px_0px_rgba(136,136,136,0.41)] border-white"
             : "bg-[#F6F6F6] border-transparent"
         }`}
     >
-      <div className="flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-5 lg:gap-[30px] text-center md:text-left">
+      <div className="flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-5 lg:gap-7.5 text-center md:text-left">
         {/* Avatar */}
         <div
           className="
             relative shrink-0 rounded-full overflow-hidden
-            w-[70px] h-[70px]
-            sm:w-[80px] sm:h-[80px]
-            lg:w-[100px] lg:h-[100px]
+            w-17.5 h-17.5
+            sm:w-20 sm:h-20
+            lg:w-25 lg:h-25
           "
         >
           <Image
@@ -43,8 +43,8 @@ const ReviewCard = ({
           <h4
             className="
               font-bold
-              text-[16px] mb-[4px]
-              md:text-[18px] md:mb-[5px]
+              text-[16px] mb-1
+              md:text-[18px] md:mb-1.25
               lg:text-[20px]
             "
           >
@@ -63,7 +63,7 @@ const ReviewCard = ({
             {comment}
           </p>
 
-          <div className="flex items-center gap-[4px] lg:gap-[5px] mt-[12px]">
+          <div className="flex items-center gap-1 lg:gap-1.25 mt-3">
             {Array.from({ length: rating }, (_, index) => (
               <Image
                 key={index}
@@ -71,7 +71,7 @@ const ReviewCard = ({
                 alt="Star"
                 width={13}
                 height={13}
-                className="shrink-0 w-[11px] h-[11px] lg:w-[13px] lg:h-[13px]"
+                className="shrink-0 w-2.75 h-2.75 lg:w-3.25 lg:h-3.25"
               />
             ))}
           </div>

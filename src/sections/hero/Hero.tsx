@@ -9,16 +9,16 @@ const Hero = () => {
       id="home"
       className="
         relative overflow-hidden flex items-center
-        h-[420px] mt-3
-        sm:h-[480px] sm:mt-4
-        md:h-[530px] md:mt-5
-        lg:h-[560px] lg:mt-6
-        xl:h-[590px] xl:mt-[29px]
-        2xl:h-[674px]
+        h-105 mt-3
+        sm:h-120 sm:mt-4
+        md:h-132.5 md:mt-5
+        lg:h-140 lg:mt-6
+        xl:h-147.5 xl:mt-7.25
+        2xl:h-168.5
       "
     >
       {/* Grid background — unchanged */}
-      <div className="absolute inset-0 -z-10 2xl:right-[2px] 2xl:top-0 2xl:bottom-0 2xl:-left-[30px]">
+      <div className="absolute inset-0 -z-10 2xl:right-0.5 2xl:top-0 2xl:bottom-0 2xl:-left-7.5">
         <HeroBackground />
       </div>
 
@@ -100,8 +100,8 @@ const Hero = () => {
           w-10 h-10
           sm:w-12 sm:h-12
           md:w-14 md:h-14
-          lg:w-[72px] lg:h-[72px]
-          xl:w-[100px] xl:h-[100px]
+          lg:w-18 lg:h-18
+          xl:w-25 xl:h-25
         "
       />
 
@@ -123,8 +123,8 @@ const Hero = () => {
           w-7 h-7
           sm:w-8 sm:h-8
           md:w-10 md:h-10
-          lg:w-[46px] lg:h-[46px]
-          xl:w-[57px] xl:h-[57px]
+          lg:w-11.5 lg:h-11.5
+          xl:w-14.25 xl:h-14.25
         "
       />
 
@@ -137,7 +137,7 @@ const Hero = () => {
         style={{ width: "auto", height: "auto" }}
         className="
           hidden sm:block absolute
-          translate-x-1/2 -translate-y-1/2 rotate-[28deg]
+          translate-x-1/2 -translate-y-1/2 rotate-28
           right-[14%] top-[26%]
           md:right-[16%]
           lg:right-[17%]
@@ -146,8 +146,8 @@ const Hero = () => {
           w-10 h-10
           sm:w-12 sm:h-12
           md:w-14 md:h-14
-          lg:w-[52px] lg:h-[52px]
-          xl:w-[65px] xl:h-[65px]
+          lg:w-13 lg:h-13
+          xl:w-16.25 xl:h-16.25
         "
       />
 
@@ -160,7 +160,7 @@ const Hero = () => {
         style={{ width: "auto", height: "auto" }}
         className="
           hidden sm:block absolute
-          translate-x-1/2 -translate-y-1/2 rotate-[33deg]
+          translate-x-1/2 -translate-y-1/2 rotate-33
           right-[14%] top-[78%]
           md:right-[16%]
           lg:right-[17%]
@@ -169,26 +169,26 @@ const Hero = () => {
           w-7 h-7
           sm:w-8 sm:h-8
           md:w-10 md:h-10
-          lg:w-[50px] lg:h-[50px]
-          xl:w-[63px] xl:h-[63px]
+          lg:w-12.5 lg:h-12.5
+          xl:w-15.75 xl:h-15.75
         "
       />
 
       {/* ── Ellipse glass container ────────────────────────────────── */}
       <div
         className="
-          absolute left-1/2 -translate-x-1/2 top-[59px] -z-5
+          absolute left-1/2 -translate-x-1/2 top-14.75 -z-5
           w-[92vw]   h-[calc(100%-59px-30px)]
           sm:w-[78vw]
           md:w-[72vw]
           lg:w-[66vw]
-          xl:w-[923px] xl:h-[523px]
-          2xl:w-[980px] 2xl:h-[560px]
+          xl:w-230.75 xl:h-130.75
+          2xl:w-245 2xl:h-140
         "
       >
         {/* White-glass blur — color/blur UNCHANGED */}
         <div className="w-full h-full rounded-[50%] bg-white/65 backdrop-blur-[0.6px] flex flex-col items-center justify-center">
-          <div className="text-center flex flex-col items-center max-w-[700px] px-6 sm:px-8 xl:px-8">
+          <div className="text-center flex flex-col items-center max-w-175 px-6 sm:px-8 xl:px-8">
             <h1
               className="
               font-bold leading-tight
@@ -214,7 +214,7 @@ const Hero = () => {
               sm:mt-4 sm:mb-5 sm:text-[13px]
               md:mt-5 md:mb-6
               lg:mt-6 lg:mb-7
-              xl:mt-[31px] xl:mb-[39px] xl:text-[14px]
+              xl:mt-7.75 xl:mb-9.75 xl:text-[14px]
             "
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

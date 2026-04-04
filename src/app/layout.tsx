@@ -32,7 +32,7 @@ export default function RootLayout({
     >
       <body>
         <Navbar />
-        <main className="h-full max-w-[1440px] mx-auto w-full ">
+        <main className="h-full max-w-360 mx-auto w-full ">
           {children}
         </main>
         <Footer />

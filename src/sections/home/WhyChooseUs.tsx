@@ -21,8 +21,8 @@ const WhyChooseUs = () => {
       id="why-choose-us"
       className="
         w-full flex justify-center
-        px-4 sm:px-6 md:px-10 lg:px-[100px]
-        pt-10 sm:pt-14 md:pt-16 lg:pt-[84px]
+        px-4 sm:px-6 md:px-10 lg:px-25
+        pt-10 sm:pt-14 md:pt-16 lg:pt-21
       "
     >
       <div className="relative w-full bg-[#FDEBF0] rounded-[28px] sm:rounded-[38px] lg:rounded-[48px] flex flex-col lg:flex-row items-center">
@@ -32,7 +32,7 @@ const WhyChooseUs = () => {
             z-10 flex-1
             px-6 pt-8 pb-8
             sm:px-10 sm:pt-10
-            lg:ml-[90px] lg:mt-[75px] lg:mb-[83px] lg:px-0 lg:pt-0 lg:pb-0
+            lg:ml-22.5 lg:mt-18.75 lg:mb-20.75 lg:px-0 lg:pt-0 lg:pb-0
           "
         >
           <h2
@@ -48,7 +48,7 @@ const WhyChooseUs = () => {
           <p
             className="
               font-semibold! mb-6 lg:mb-10
-              max-w-full lg:max-w-[460px]
+              max-w-full lg:max-w-115
             "
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -56,10 +56,10 @@ const WhyChooseUs = () => {
             ad minim veniam, quis nostrud exercitation
           </p>
 
-          <div className="space-y-3 lg:space-y-[14px] mb-7 lg:mb-11">
+          <div className="space-y-3 lg:space-y-3.5 mb-7 lg:mb-11">
             {features.map((feature, index) => (
               <div key={index} className="flex items-center gap-3">
-                <div className="w-[28px] h-[28px] lg:w-[32px] lg:h-[32px] rounded-full bg-[#FAC4D2] flex items-center justify-center flex-shrink-0">
+                <div className="w-7 h-7 lg:w-8 lg:h-8 rounded-full bg-[#FAC4D2] flex items-center justify-center shrink-0">
                   <Image
                     src="/icons/check.svg"
                     alt="check"
@@ -82,12 +82,12 @@ const WhyChooseUs = () => {
         </div>
 
         {/* Right Side  */}
-        <div className="flex relative w-full lg:w-[670px]  h-[360px] sm:h-[420px] xl:h-[511px]  mt-2 mb-8 lg:mt-[80px] lg:mb-[38px] lg:mr-[38px] items-end justify-center flex-shrink-0">
+        <div className="flex relative w-full lg:w-167.5  h-90 sm:h-105 xl:h-127.75  mt-2 mb-8 lg:mt-20 lg:mb-9.5 lg:mr-9.5 items-end justify-center shrink-0">
           {/* Ellipse */}
-          <div className="absolute bottom-0 xl:bottom-[74px] left-[15%] right-[15%] lg:left-[102px] lg:right-auto w-[80%] lg:w-[570px] h-[60%] lg:h-[337px]  bg-[#FAC4D2] rounded-full z-10" />
+          <div className="absolute bottom-0 xl:bottom-18.5 left-[15%] right-[15%] lg:left-25.5 lg:right-auto w-[80%] lg:w-142.5 h-[60%] lg:h-84.25  bg-[#FAC4D2] rounded-full z-10" />
 
           {/* Man Image  */}
-          <div className="absolute bottom-0 xl:bottom-[74px] right-[10%] left-[25%] lg:right-[140px] lg:left-[205px] w-[50%] lg:w-[330px] h-full lg:h-[435px] z-10 flex items-end justify-center">
+          <div className="absolute bottom-0 xl:bottom-18.5 right-[10%] left-[25%] lg:right-35 lg:left-51.25 w-[50%] lg:w-82.5 h-full lg:h-108.75 z-10 flex items-end justify-center">
             <Image
               src="/images/smiling-male-office-worker.png"
               alt="Smiling Male Office Worker"
@@ -99,8 +99,8 @@ const WhyChooseUs = () => {
           </div>
 
           {/* Floating Card 1: Property Info (Room) */}
-          <div className="absolute top-[5%] left-[2%] sm:left-[5%] md:left-[10%] lg:top-[34px] lg:left-[66px] bg-white p-2 sm:p-3 rounded-[12px] sm:rounded-[17px] shadow-[-16px_28px_38.4px_-10px_rgba(191,33,74,0.28)] z-20 px-[6px] py-[8px] sm:px-[9px] sm:py-[10px] animate-bounce-subtle flex flex-row items-start gap-2 scale-[0.8] sm:scale-95 lg:scale-100">
-            <div className="w-[70px] h-[55px] sm:w-[90px] sm:h-[65px] lg:w-[121px] lg:h-[86px] rounded-[7px] overflow-hidden relative">
+          <div className="absolute top-[5%] left-[2%] sm:left-[5%] md:left-[10%] lg:top-8.5 lg:left-16.5 bg-white p-2 sm:p-3 rounded-xl sm:rounded-[17px] shadow-[-16px_28px_38.4px_-10px_rgba(191,33,74,0.28)] z-20 px-1.5 py-2 sm:px-2.25 sm:py-2.5 animate-bounce-subtle flex flex-row items-start gap-2 scale-[0.8] sm:scale-95 lg:scale-100">
+            <div className="w-17.5 h-13.75 sm:w-22.5 sm:h-16.25 lg:w-30.25 lg:h-21.5 rounded-[7px] overflow-hidden relative">
               <Image
                 src="/images/room.png"
                 alt="Room"
@@ -110,10 +110,10 @@ const WhyChooseUs = () => {
               />
             </div>
             <div className="flex flex-col items-start gap-1 sm:gap-2 pt-1">
-              <div className="flex flex-col gap-[3px] sm:gap-[6px] pb-1">
-                <div className="w-[60px] sm:w-[80px] lg:w-[103px] h-[4px] sm:h-[5px] bg-[#D9D9D9] rounded-[11px]"></div>
-                <div className="w-[40px] sm:w-[52px] lg:w-[66px] h-[4px] sm:h-[5px] bg-[#D9D9D9] rounded-[11px]"></div>
-                <div className="w-[30px] sm:w-[42px] lg:w-[54px] h-[4px] sm:h-[5px] bg-[#D9D9D9] rounded-[11px]"></div>
+              <div className="flex flex-col gap-0.75 sm:gap-1.5 pb-1">
+                <div className="w-15 sm:w-20 lg:w-25.75 h-1 sm:h-1.25 bg-[#D9D9D9] rounded-[11px]"></div>
+                <div className="w-10 sm:w-13 lg:w-16.5 h-1 sm:h-1.25 bg-[#D9D9D9] rounded-[11px]"></div>
+                <div className="w-7.5 sm:w-10.5 lg:w-13.5 h-1 sm:h-1.25 bg-[#D9D9D9] rounded-[11px]"></div>
               </div>
               <div className="flex gap-1">
                 {[1, 2, 3, 4].map((s) => (
@@ -123,7 +123,7 @@ const WhyChooseUs = () => {
                     alt="star"
                     width={8}
                     height={8}
-                    className="shrink-0 w-[8px] h-[8px] sm:w-[10px] sm:h-[10px]"
+                    className="shrink-0 w-2 h-2 sm:w-2.5 sm:h-2.5"
                   />
                 ))}
               </div>
@@ -137,18 +137,18 @@ const WhyChooseUs = () => {
           </div>
 
           {/* Floating Card 2: Brands */}
-          <div className="absolute top-[0%] right-[2%] sm:right-[5%] md:right-[10%] lg:top-[18px] lg:right-[16px] bg-white px-3 py-3 sm:px-4 sm:py-4 lg:px-[22px] lg:py-[20px] rounded-[12px] sm:rounded-[17px] shadow-[-15px_21px_38.4px_0px_rgba(191,33,74,0.28)] z-20 grid grid-cols-2 gap-1 sm:gap-2 animate-float scale-[0.8] sm:scale-95 lg:scale-100">
+          <div className="absolute top-[0%] right-[2%] sm:right-[5%] md:right-[10%] lg:top-4.5 lg:right-4 bg-white px-3 py-3 sm:px-4 sm:py-4 lg:px-5.5 lg:py-5 rounded-xl sm:rounded-[17px] shadow-[-15px_21px_38.4px_0px_rgba(191,33,74,0.28)] z-20 grid grid-cols-2 gap-1 sm:gap-2 animate-float scale-[0.8] sm:scale-95 lg:scale-100">
             {brands.map((brand, index) => (
               <div
                 key={index}
-                className="w-[40px] h-[40px] lg:w-[53px] lg:h-[53px] rounded-[5px] flex items-center justify-center"
+                className="w-10 h-10 lg:w-13.25 lg:h-13.25 rounded-[5px] flex items-center justify-center"
               >
                 <Image
                   src={brand.icon}
                   alt="brand"
                   width={20}
                   height={20}
-                  className="w-[18px] h-[18px] sm:w-[24px] sm:h-[24px]"
+                  className="w-4.5 h-4.5 sm:w-6 sm:h-6"
                   style={{ width: "auto", height: "auto" }}
                 />
               </div>
@@ -156,13 +156,13 @@ const WhyChooseUs = () => {
           </div>
 
           {/* Floating Card 3: Calendar */}
-          <div className="absolute bottom-[-5%] left-[2%] sm:left-[5%] md:left-[8%] lg:bottom-0 lg:left-0 bg-white p-2 sm:p-3 lg:p-5 rounded-[12px] sm:rounded-[17px] shadow-[29px_21px_38.4px_0px_rgba(191,33,74,0.28)] z-20 overflow-hidden animate-bounce-subtle scale-[0.7] sm:scale-90 lg:scale-100">
+          <div className="absolute bottom-[-5%] left-[2%] sm:left-[5%] md:left-[8%] lg:bottom-0 lg:left-0 bg-white p-2 sm:p-3 lg:p-5 rounded-xl sm:rounded-[17px] shadow-[29px_21px_38.4px_0px_rgba(191,33,74,0.28)] z-20 overflow-hidden animate-bounce-subtle scale-[0.7] sm:scale-90 lg:scale-100">
             <Image
               src="/icons/calendar.svg"
               alt="Calendar"
               width={120}
               height={120}
-              className="object-cover w-[100px] sm:w-[140px] lg:w-[211px] h-auto"
+              className="object-cover w-25 sm:w-35 lg:w-52.75 h-auto"
               style={{ width: "auto", height: "auto" }}
             />
           </div>

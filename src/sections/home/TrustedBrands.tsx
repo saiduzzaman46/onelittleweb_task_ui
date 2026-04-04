@@ -58,7 +58,7 @@ const TrustedBrands = () => {
         className="
           font-semibold text-[#000000] text-center
           text-[15px] sm:text-[17px] md:text-[18px] lg:text-[20px]
-          mb-5 sm:mb-6 md:mb-7 lg:mb-[35px]
+          mb-5 sm:mb-6 md:mb-7 lg:mb-8.75
           px-4
         "
       >
@@ -66,12 +66,12 @@ const TrustedBrands = () => {
       </h3>
 
       {/* Step-scroll track */}
-      <div className="w-full bg-[#f6f7f8] py-4 sm:py-5 lg:py-[22px] overflow-hidden">
+      <div className="w-full bg-[#f6f7f8] py-4 sm:py-5 lg:py-5.5 overflow-hidden">
         <div
           className={`flex items-center ${
             activeIndex === brands.length
               ? "transition-none"
-              : "transition-transform duration-[600ms] ease-in-out"
+              : "transition-transform duration-600 ease-in-out"
           }`}
           style={{
             gap: `${GAP}px`,
@@ -84,8 +84,8 @@ const TrustedBrands = () => {
               key={index}
               style={{ width: `${itemWidth}px` }}
               className="
-                relative flex-shrink-0
-                h-[28px] sm:h-[30px] md:h-[32px] lg:h-[35px]
+                relative shrink-0
+                h-7 sm:h-7.5 md:h-8 lg:h-8.75
               "
             >
               <Image

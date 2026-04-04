@@ -1,16 +1,16 @@
-import Hero from "@/pages/hero/Hero";
-import TrustedBrands from "@/pages/home/TrustedBrands";
-import Services from "@/pages/service/Services";
-import Pricing from "@/pages/pricing/Pricing";
-import Tools from "@/pages/tools/Tools";
-import Faq from "@/pages/faq/Faq";
-import Review from "@/pages/review/Review";
-import GettingStarted from "@/pages/home/GettingStarted";
-import WhyChooseUs from "@/pages/home/WhyChooseUs";
+import Hero from "@/sections/hero/Hero";
+import TrustedBrands from "@/sections/home/TrustedBrands";
+import Services from "@/sections/service/Services";
+import Pricing from "@/sections/pricing/Pricing";
+import Tools from "@/sections/tools/Tools";
+import Faq from "@/sections/faq/Faq";
+import Review from "@/sections/review/Review";
+import GettingStarted from "@/sections/home/GettingStarted";
+import WhyChooseUs from "@/sections/home/WhyChooseUs";
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Hero />
       <TrustedBrands />
       <Services />
@@ -20,6 +20,6 @@ export default function Home() {
       <WhyChooseUs />
       <Review />
       <Faq />
-    </main>
+    </>
   );
 }

@@ -17,11 +17,11 @@ const Tools = () => {
   return (
     <section
       id="tools"
-      className="w-full flex flex-col items-center pt-10 sm:pt-14 md:pt-16 lg:pt-[80px]"
+      className="w-full flex flex-col items-center pt-10 sm:pt-14 md:pt-16 lg:pt-20"
     >
       {/* Header */}
-      <div className="w-full bg-white flex flex-col items-center mb-10 sm:mb-16 md:mb-20 lg:mb-[130px]">
-        <div className="text-center max-w-[760px] px-6 ">
+      <div className="w-full bg-white flex flex-col items-center mb-10 sm:mb-16 md:mb-20 lg:mb-32.5">
+        <div className="text-center max-w-1906 ">
           <SectionHeader
             title="Our"
             highlightText="Tools"
@@ -31,14 +31,14 @@ const Tools = () => {
       </div>
 
       {/* Tools grid */}
-      <div className="w-full bg-[#F6F6F6] pt-8 pb-10 sm:pt-10 sm:pb-14 lg:pt-[38px] lg:pb-[85px] flex justify-center px-6 sm:px-6">
+      <div className="w-full bg-[#F6F6F6] pt-8 pb-10 sm:pt-10 sm:pb-14 lg:pt-9.5 lg:pb-21.25 flex justify-center px-6 sm:px-6">
         <div
           className="
-            w-full max-w-[900px]
+            w-full max-w-225
             grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3
             gap-x-4 gap-y-4
             sm:gap-x-5 sm:gap-y-5
-            lg:gap-x-[34px] lg:gap-y-[40px]
+            lg:gap-x-8.5 lg:gap-y-10
             justify-items-center
           "
         >
@@ -47,14 +47,14 @@ const Tools = () => {
               key={tool.id}
               className="
                 w-full
-                h-[100px] sm:h-[120px] lg:h-[140px]
-                bg-white rounded-[12px]
+                h-25 sm:h-30 lg:h-35
+                bg-white rounded-xl
                 hover:shadow-[0_4px_30px_rgba(255,138,168,0.28)]
                 flex items-center justify-center
                 transition-shadow
               "
             >
-              <div className="relative w-[110px] h-[38px] sm:w-[130px] sm:h-[44px] lg:w-[150px] lg:h-[50px]">
+              <div className="relative w-27.5 h-9.5 sm:w-32.5 sm:h-11 lg:w-37.5 lg:h-12.5">
                 <Image
                   src={tool.image}
                   alt={tool.name}

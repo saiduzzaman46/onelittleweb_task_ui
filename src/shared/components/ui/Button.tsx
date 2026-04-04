@@ -48,7 +48,7 @@ const Button = ({
     >
       <span>{children}</span>
       {icon && iconPosition === "left" && (
-        <span className="relative block w-[10px] h-[9px]">
+        <span className="relative block w-2.5 h-2.25">
           <Image
             src="/icons/arrow_forword.svg"
             fill

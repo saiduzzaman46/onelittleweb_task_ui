@@ -53,8 +53,8 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="w-full bg-white border-t-1 border-[#D6D6D6]">
-      <div className="max-w-[1440px] mx-auto px-[104px] py-[80px]  ">
+    <footer className="w-full bg-white border-t border-[#D6D6D6]">
+      <div className="max-w-360 mx-auto px-26 py-20  ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[396px_1fr_1fr_1fr] gap-20 2xl:gap-30">
           {/* Logo & Description */}
           <div className="flex flex-col gap-6">
@@ -89,7 +89,7 @@ const Footer = () => {
           {/* Company Links */}
           <div className="flex flex-col gap-6">
             <h4 className="text-[16px] font-bold tracking-wider">Company</h4>
-            <ul className="flex flex-col gap-[20px]">
+            <ul className="flex flex-col gap-5">
               {companyLinks.map((link) => (
                 <li key={link.name}>
                   <Link
@@ -104,7 +104,7 @@ const Footer = () => {
           </div>
 
           {/* Help Links */}
-          <div className="flex flex-col gap-[20px]">
+          <div className="flex flex-col gap-5">
             <h4 className="text-[16px] font-bold tracking-wider">Help</h4>
             <ul className="flex flex-col gap-4">
               {helpLinks.map((link) => (
@@ -121,9 +121,9 @@ const Footer = () => {
           </div>
 
           {/* Resources Links */}
-          <div className="flex flex-col gap-[20px]">
+          <div className="flex flex-col gap-5">
             <h4 className="text-[16px] font-bold tracking-wider">Resources</h4>
-            <ul className="flex flex-col gap-[20px]">
+            <ul className="flex flex-col gap-5">
               {resourceLinks.map((link) => (
                 <li key={link.name}>
                   <Link
@@ -141,7 +141,7 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="w-full bg-[#230B41] py-5">
-        <div className="max-w-[1440px] mx-auto px-6 xl:px-[100px] flex justify-center items-center">
+        <div className="max-w-360 mx-auto px-6 xl:px-25 flex justify-center items-center">
           <p className="text-white! font-regular!">
             © Copyright {currentYear}, All Rights Reserved by XYZ
           </p>

@@ -22,7 +22,7 @@ const SectionHeader = ({
     <div className={cn("text-center flex flex-col items-center", className)}>
       <h2
         className={cn(
-          "text-[32px] md:text-[40px] font-bold text-[#000000] mb-[15px]",
+          "text-[32px] md:text-[40px] font-bold text-[#000000] mb-3.75",
           titleClassName,
         )}
       >

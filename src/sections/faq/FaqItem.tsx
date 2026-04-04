@@ -45,13 +45,13 @@ const MinusIcon = () => (
 
 const FaqItem = ({ question, answer, isOpen, onClick }: FaqItemProps) => {
   return (
-    <div className="w-full border-t border-[#BF214A]/28 first:border-t-0 py-[32px] first:pt-0">
+    <div className="w-full border-t border-[#BF214A]/28 first:border-t-0 py-8 first:pt-0">
       <button
         className="w-full flex items-center justify-between text-left focus:outline-none gap-4 group"
         onClick={onClick}
       >
         <h4 className="text-[18px] font-bold text-[#000000] ">{question}</h4>
-        <div className="flex-shrink-0 ml-4 transition-transform duration-300">
+        <div className="shrink-0 ml-4 transition-transform duration-300">
           {isOpen ? <MinusIcon /> : <PlusIcon />}
         </div>
       </button>
@@ -59,10 +59,10 @@ const FaqItem = ({ question, answer, isOpen, onClick }: FaqItemProps) => {
       <div
         className={cn(
           "overflow-hidden transition-all duration-300 ease-in-out",
-          isOpen ? "max-h-[200px] mt-[12px] opacity-100" : "max-h-0 opacity-0",
+          isOpen ? "max-h-50 mt-3 opacity-100" : "max-h-0 opacity-0",
         )}
       >
-        <p className=" text-[#667085] text-[16px]! font-[400]!">{answer}</p>
+        <p className=" text-[#667085] text-[16px]! font-normal!">{answer}</p>
       </div>
     </div>
   );

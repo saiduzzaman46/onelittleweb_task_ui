@@ -28,8 +28,8 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-white shadow-[0px_4px_62px_0px_rgba(250,196,210,0.63)] relative z-50 sticky top-0">
-      <div className="max-w-[1440px] mx-auto flex items-center justify-between xl:px-[100px] px-6 py-4 w-full">
+    <nav className="bg-white shadow-[0px_4px_62px_0px_rgba(250,196,210,0.63)] z-50 sticky top-0">
+      <div className="max-w-360 mx-auto flex items-center justify-between xl:px-25 px-6 py-4 w-full">
         <div className="shrink-0">
           <Link href="/#home" onClick={() => scrollToSection("home")}>
             <Image
@@ -54,14 +54,14 @@ const Navbar = () => {
                 key={item.name}
                 className={`relative text-[18px] transition-colors hover:text-[#ED3C6A] py-1 cursor-pointer ${
                   isActive
-                    ? "text-[#ED3C6A] font-[700]"
+                    ? "text-[#ED3C6A] font-bold"
                     : "text-[#1E1E1E] font-normal"
                 }`}
                 onClick={() => scrollToSection(item.href)}
               >
                 <span>{item.name}</span>
                 {isActive && (
-                  <span className="absolute left-0 bottom-0 w-full h-[2px] bg-[#ED3C6A] rounded-full"></span>
+                  <span className="absolute left-0 bottom-0 w-full h-0.5 bg-[#ED3C6A] rounded-full"></span>
                 )}
               </li>
             );
@@ -81,26 +81,26 @@ const Navbar = () => {
 
         {/* Mobile Hamburger Burger */}
         <button
-          className="lg:hidden flex flex-col items-center justify-center gap-[6px] w-[30px] h-[30px]"
+          className="lg:hidden flex flex-col items-center justify-center gap-1.5 w-7.5 h-7.5"
           onClick={() => setIsOpen(true)}
         >
-          <span className="block w-full h-[3px] bg-[#1E1E1E] rounded-md"></span>
-          <span className="block w-full h-[3px] bg-[#1E1E1E] rounded-md"></span>
-          <span className="block w-full h-[3px] bg-[#1E1E1E] rounded-md"></span>
+          <span className="block w-full h-0.75 bg-[#1E1E1E] rounded-md"></span>
+          <span className="block w-full h-0.75 bg-[#1E1E1E] rounded-md"></span>
+          <span className="block w-full h-0.75 bg-[#1E1E1E] rounded-md"></span>
         </button>
       </div>
 
       {/* Mobile Backdrop Overlay */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black/30 z-[40] lg:hidden transition-opacity"
+          className="fixed inset-0 bg-black/30 z-40 lg:hidden transition-opacity"
           onClick={() => setIsOpen(false)}
         />
       )}
 
       {/* Mobile Side Drawer Menu */}
       <div
-        className={`fixed top-0 right-0 h-full max-w-sm w-[300px] bg-white shadow-2xl flex flex-col gap-8 p-8 pt-20 z-[50] transition-transform duration-300 ease-in-out lg:hidden ${
+        className={`fixed top-0 right-0 h-full max-w-sm w-75 bg-white shadow-2xl flex flex-col gap-8 p-8 pt-20 z-50 transition-transform duration-300 ease-in-out lg:hidden ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
