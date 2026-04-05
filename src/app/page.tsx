@@ -2,14 +2,12 @@ import dynamic from "next/dynamic";
 import Hero from "@/sections/hero/Hero";
 import TrustedBrands from "@/sections/home/TrustedBrands";
 import Services from "@/sections/service/Services";
-
-const Pricing = dynamic(() => import("@/sections/pricing/Pricing"));
-const Tools = dynamic(() => import("@/sections/tools/Tools"));
-const Faq = dynamic(() => import("@/sections/faq/Faq"));
-const Review = dynamic(() => import("@/sections/review/Review"));
-const GettingStarted = dynamic(() => import("@/sections/home/GettingStarted"));
-const WhyChooseUs = dynamic(() => import("@/sections/home/WhyChooseUs"));
-
+import Pricing from "@/sections/pricing/Pricing";
+import Tools from "@/sections/tools/Tools";
+import Faq from "@/sections/faq/Faq";
+import Review from "@/sections/review/Review";
+import GettingStarted from "@/sections/home/GettingStarted";
+import WhyChooseUs from "@/sections/home/WhyChooseUs";
 
 export default function Home() {
   return (
@@ -26,4 +24,3 @@ export default function Home() {
     </>
   );
 }
-
