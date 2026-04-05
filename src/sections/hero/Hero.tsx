@@ -83,7 +83,7 @@ const Hero = () => {
       {/* ── Floating brand icons ── */}
       {/* Airbnb — top-left */}
       <Image
-        src="/icons/airbnb.svg"
+        src="/icons/airbnb1.svg"
         alt="Airbnb"
         width={120}
         height={120}
