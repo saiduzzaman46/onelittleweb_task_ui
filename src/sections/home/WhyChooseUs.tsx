@@ -93,8 +93,7 @@ const WhyChooseUs = () => {
               alt="Smiling Male Office Worker"
               width={500}
               height={550}
-              className="object-contain drop-shadow-2xl"
-              style={{ width: "auto", height: "auto" }}
+              className="object-contain drop-shadow-2xl w-full h-full"
             />
           </div>
 
