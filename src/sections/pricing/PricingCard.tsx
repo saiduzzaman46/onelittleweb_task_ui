@@ -3,10 +3,10 @@ import Button from "@/shared/components/ui/Button";
 import Image from "next/image";
 
 const CheckIcon = () => (
-  <Image src="/icons/check.svg" width={16} height={16} alt="Check" style={{ width: "auto", height: "auto" }} />
+  <img src="/icons/check.svg" width={16} height={16} alt="Check" style={{ width: "auto", height: "auto" }} />
 );
 const CrossIcon = () => (
-  <Image src="/icons/cross.svg" width={16} height={16} alt="Cross" style={{ width: "auto", height: "auto" }} />
+  <img src="/icons/cross.svg" width={16} height={16} alt="Cross" style={{ width: "auto", height: "auto" }} />
 );
 
 const PricingCard = ({
