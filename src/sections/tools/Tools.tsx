@@ -21,7 +21,7 @@ const Tools = () => {
     >
       {/* Header */}
       <div className="w-full bg-white flex flex-col items-center mb-10 sm:mb-16 md:mb-20 lg:mb-32.5">
-        <div className="text-center max-w-1906 ">
+        <div className="text-center max-w-200 px-6 sm:px-6">
           <SectionHeader
             title="Our"
             highlightText="Tools"
